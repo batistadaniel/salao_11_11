@@ -1,0 +1,18 @@
+.header {
+    width: 100%;
+    background-color: var(--cor-principal);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 10px 0;
+    font-family: "Jomolhari", serif;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.header h1 {
+    font-size: 30px;
+    color: var(--cor-branco);
+}

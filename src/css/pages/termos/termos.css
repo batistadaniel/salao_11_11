@@ -1,0 +1,59 @@
+@import '../../global/global.css';
+@import './partials/';
+
+body, html {
+    height: 100%;
+    overflow: hidden; 
+    background-color: var(--cor-branco); 
+}
+
+header {
+    width: 100%;
+    background-color: var(--cor-principal); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 10px 0;
+    font-family: "Jomolhari", serif;
+    letter-spacing: 1px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+header h1 {
+    font-size: 30px;
+    color: var(--cor-branco);
+}
+main {
+    position: fixed;
+    top: 80px; 
+    left: 0;
+    width: 100%;
+    height: calc(100% - 70px); 
+    background-color: var(--cor-branco);
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    overflow-y: auto; 
+    padding-top: 20px;
+    z-index: 5;
+}
+
+main #termosEPoliticas h2, h3, h4 {
+    font-family: "Roboto", sans-serif;
+    padding: 0 14px;
+}
+
+#termosEPoliticas {
+    margin-bottom: 60px;
+}
+.termos h4, .politicas h4 {
+    padding: 16px 30px;
+}
+.linha {
+    display: flex;
+    margin: 15px auto;
+    width: 92%;
+    height: 2px;
+    background-color: black;
+}

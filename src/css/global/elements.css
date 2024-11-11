@@ -1,0 +1,150 @@
+/* GLOBAL MAIN */
+body, html {
+    height: 100vh;
+    overflow: auto;
+    background-color: var(--cor-principal);
+}
+/* BOTAO VERDE */
+.btn {
+    width: 300px;
+    height: 100px;
+    background-color: var(--cor-verde);
+    border-radius: 10px;
+    color: var(--cor-branco);
+    font-size: 30px;
+    text-align: left;
+    padding-left: 20px;
+}
+
+/* AJUSTE CENTRAL */
+.ajuste-central {
+    position: fixed;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    height: calc(100% - 76px);
+    background-color: var(--cor-branco);
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    overflow-y: auto;
+    padding-top: 20px;
+    z-index: 5;
+}
+
+/* MENU PRINCIPAL */
+.main-menu {
+    display: grid;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+/* BOTOES DE OPCAO */
+.btn-opcao {
+    width: 300px;
+    border: none;
+    border-radius: 10px;
+    background-color: white;
+    color: black;
+    font-size: 24px;
+    text-align: left;
+    padding-left: 40px;
+    cursor: pointer;
+}
+
+/* HEADER */
+.header {
+    width: 100%;
+    background-color: var(--cor-principal);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 10px 0;
+    font-family: "Jomolhari", serif;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+.header h1 {
+    font-size: 30px;
+    color: var(--cor-branco);
+}
+
+/* CADASTRO DE FORMULARIOS */
+.cadastro {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--cor-branco);
+}
+.cadastro-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cadastro-form h1 {
+    font-size: var(--fonte-tela-inicial);
+    color: var(--cor-principal);
+    font-weight: 300;
+    text-align: center;
+    letter-spacing: -5px;
+    padding: 50px;
+}
+
+.cadastro-form .inputs {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+    gap: 16px;
+}
+
+select, input[type=text], input[type=password] {
+    padding: 18px 15px;
+    border: 1px solid #948f8fb0;
+    border-radius: 12px;
+    outline: none;
+    width: 100%; 
+    font-size: 18px;
+}
+
+.btns-cadastro {
+    display: flex;
+    width: 80%;
+    text-align: center;
+    justify-content: center;
+    gap: 40px;
+    padding-top: 30px;
+}
+.btn-cadastro {
+    padding: 16px;
+    border-radius: 12px;
+    font-size: var(--fonte-btn-inicial);
+    font-weight: 300;       
+    width: 50%;
+}
+
+.btn-cadastro:nth-child(1) {
+    color: var(--cor-principal);
+    border: 2px solid var(--cor-principal);
+    background-color: var(--cor-branco);
+}
+.btn-cadastro:nth-child(2) {
+    color: var(--cor-branco);
+    background-color: var(--cor-verde);
+}
+
+.termosEPrivacidade {
+    padding: 20px;
+}
+.termosEPrivacidade a {
+    text-decoration: underline;
+    color: var(--cor-principal);
+}
+.termosEPrivacidade a svg {
+    width: 20px;
+    height: 20px;
+    fill: var(--cor-principal);
+}

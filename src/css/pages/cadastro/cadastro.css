@@ -1,0 +1,11 @@
+@import '../../global/global.css';
+@import './partials/';
+
+body, html {
+    width: 100%;
+    height: 100dvh;
+    overflow: auto;
+    text-align: center;
+    background: none;
+}
+

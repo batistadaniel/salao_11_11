@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/pages/homes/adm/adm.css">
+    <title>Home | Administrador</title>
+</head>
+<body>
+    <!-- Cabecalho -->
+    <header id="header" class="header">
+        <h1>Beleza Rápida</h1>
+    </header>
+
+    <section id="home" class="ajuste-central"> 
+        <!-- Area ADM - Op adms - Op criar -->
+        <main id="cadastro" class="cadastro" style="height: 0;">
+            <form id="cadastroForm" class="cadastro-form">
+                <h1 style="color: black;">Criar novo administrador</h1>
+                <div class="inputs">
+                    <select name="opcoesUsuarios" id="opcoesUsuarios">
+                        <option value="" disabled>-- Selecione</option>
+                        <option value="administrador" selected>Administrador</option>
+                    </select>
+                    <input type="text" name="nome" placeholder="Nome completo">
+                    <input type="text" name="telefone" placeholder="Telefone">
+                    <input type="text" name="cpf" placeholder="CPF">
+                    <input type="text" name="email" placeholder="E-mail">
+                    <input type="password" name="senha" placeholder="Senha">
+                </div>
+                <div class="btns-cadastro">
+                    <button type="button" id="btnVoltar" class="btn-cancelar btn-cadastro">Voltar</button>
+                    <button type="submit" id="btnSubmit" class="btn-submit btn-cadastro">Cadastrar</button>
+                </div>
+            </form>
+        </main>
+    </section>
+
+    <script src="../js/pages/homes/avancar-clique.js" defer></script>
+
+</body>
+</html>
